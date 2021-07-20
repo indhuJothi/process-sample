@@ -1,6 +1,6 @@
 var arguments = process.argv
-console.log(arguments)
-
+ console.log('Before using slice');
+ console.log(arguments);
 function add(a,b)
 {
     var sum= parseInt(a)+parseInt(b);
@@ -8,3 +8,7 @@ function add(a,b)
 }
  var sample = add(arguments[2],arguments[3]);
  console.log(sample);
+
+ const args = (process.argv.slice(2))
+ console.log('After slice');
+console.log(args)
