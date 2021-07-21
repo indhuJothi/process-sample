@@ -31,4 +31,7 @@ oranges.forEach(fruit => {
 apples.forEach(fruit => {
   console.count(fruit)
 })
-
+console.countReset('orange'); // It reset the string orange count to 0 here
+oranges.forEach(fruit => {
+  console.count(fruit)      // so here again it print from 1 and 2
+})
