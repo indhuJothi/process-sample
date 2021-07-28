@@ -11,7 +11,16 @@ function add(a,b)
  process.argv.forEach((val,index) => {  //why Index comes as second argument here
     console.log(`${index}: ${val}`)
   })
+
+  console.log('After slice');
  const args = (process.argv.slice(2))
- console.log('After slice');
 console.log(args)
+
+function sub(a,b){
+    var sub= parseInt(a)-parseInt(b)
+    return sub
+}
+
+const subRes = sub(args[1],args[0])
+console.log(subRes)
 //node argv.js 2 3 Indhu Hello
