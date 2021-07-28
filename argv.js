@@ -1,3 +1,5 @@
-const args = require('minimist')(process.argv.slice(2))
-console.log(args);
-console.log(args['lastname'])// node argv.js --name Indhu --lastname Palanivel
+const name = require('minimist')(process.argv.slice(2))
+const out = name
+const outp= name['name']
+console.log(out)
+console.log(outp)//node argv.js --name Indhu --lastname Palanivel
