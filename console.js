@@ -25,7 +25,7 @@ console.count(
 )
 
 const oranges = ['orange', 'orange']
-const apples = ['just one apple only']
+const apples = ['just one apple only','just one oragne only']
 oranges.forEach(fruit => {
   console.count(fruit)
 })
@@ -43,14 +43,18 @@ function1()
 
 
 const doSomething = () => console.log('test')
-const measureDoingSomething = () => {
+const measureDosomething=()=>{
   console.time('doSomething()')
-  //do something, and measure the time it takes
   doSomething()
   console.timeEnd('doSomething()')
+
 }
-measureDoingSomething()
+measureDosomething()
 
 console.log('\x1b[33m%s\x1b[0m', 'hi!')
 
 console.log(chalk.red('Hi!'))
+
+
+console.table([{ a: 1, b: 'Y',c:3 }, { a: 'Z', b: 2, c:'Indhu' }]);
+

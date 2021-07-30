@@ -1,9 +1,10 @@
-const readline = require('readline').createInterface({
-    input: process.stdin,
-    output: process.stdout
-  })
-  
-  readline.question(`What's your name?`, name => {
-    console.log(`Hi ${name}!`)
-    readline.close()
-  })
+const readline = require('readline')
+const getName = readline.createInterface({
+  input:process.stdin,
+  output:process.stdout
+})
+
+getName.question('What is your name?',(name)=>{
+  console.log(`Hello ${name}!`)
+  getName.close();
+})
